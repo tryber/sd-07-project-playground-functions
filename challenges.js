@@ -34,6 +34,16 @@ function splitSentence(frase){
     return arrayPalavras;
 }
 
+// 4) Concatenação de strings
+function concatName(array){
+    return `${array[array.length - 1]}, ${array[0]}`;
+}
+
+// 5) Pontos no futebol
+function footballPoints(wins, ties){
+    return 3*wins + ties; 
+}
+
 /* -----------------
 | Área de execução |
 -------------------- */
@@ -51,3 +61,12 @@ console.log(calcArea(a, b));
 // 3) Dividindo a frase
 a = `go trybe`;
 console.log(splitSentence(a));
+
+// 4) Concatenação de strings
+a = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(a));
+
+// 5) Pontos no futebol
+a = 3;
+b = 2;
+console.log(footballPoints(a, b));
