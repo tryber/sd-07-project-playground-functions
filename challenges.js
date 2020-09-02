@@ -19,6 +19,20 @@ function calcArea(base, height){
 }
 
 // 3) Dividindo a frase
+function splitSentence(frase){
+    let palavra = ``;
+    let arrayPalavras = [];
+    for(let i in frase){
+        if(frase[i] !== ` `){
+                palavra += frase[i];
+        }else{
+            arrayPalavras.push(palavra);
+            palavra = ``;
+        }
+    }
+    arrayPalavras.push(palavra);
+    return arrayPalavras;
+}
 
 /* -----------------
 | Área de execução |
@@ -35,3 +49,5 @@ b = 5;
 console.log(calcArea(a, b));
 
 // 3) Dividindo a frase
+a = `go trybe`;
+console.log(splitSentence(a));
