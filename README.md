@@ -6,7 +6,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ### 🗒 ANTES DE COMEÇAR A DESENVOLVER:
 
-https://vimeo.com/453822377
+[Tutorial em Vídeo](https://vimeo.com/453822377)
 
 1. Clone o repositório
   * `git clone https://github.com/tryber/sd-07-project-playground-functions.git`.
