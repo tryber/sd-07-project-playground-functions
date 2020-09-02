@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1r
 function compareTrue(valor1, valor2) {
   if ( valor1 > 10 && valor2 < 20 ){
     return true;
