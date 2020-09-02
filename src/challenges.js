@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1e
 function compareTrue(a, b) {
   return a && b;
 }
