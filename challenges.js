@@ -28,7 +28,7 @@ function splitSentence(frase) {
       palavra += frase[i];
     } else {
       arrayPalavras.push(palavra);
-      palavra = ``;
+      palavra = '';
     }
   }
   arrayPalavras.push(palavra);
@@ -76,4 +76,3 @@ b = 2;
 console.log(footballPoints(a, b));
 
 /* 6) Repetição do maior número */
-
