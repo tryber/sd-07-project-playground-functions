@@ -50,16 +50,6 @@ function highestCount() {
   }
   return `Posição: ${posMaisF} Soma: ${somaMaisF}`;
 }
-// Desafio 6 - Auxiliar
-function somaRepeat(array, pos) {
-  let soma = 0;
-  for (let i in array) {
-    if (array[pos] === array[i]) {
-      soma += 1;
-    }
-  }
-  return soma;
-}
 
 // Desafio 7
 function catAndMouse() {
