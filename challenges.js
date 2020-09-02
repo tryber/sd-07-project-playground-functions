@@ -47,6 +47,33 @@ function footballPoints(wins, ties) {
 
 /* 6) Repetição do maior número */
 
+function somaRepeat(array, pos) {
+  let soma = 0;
+  for (let i in array) {
+    if (array[pos] === array[i])  {
+        soma += 1;
+    }
+  }
+  return soma;
+}
+
+function heighestCount(array) {
+  let posMaisF = 0;
+  let somaMaisF = somaRepeat(array, posMaisF);
+  let posAtual = posMaisF + 1;
+  let somaAtual = 0;
+  for (posAtual; posAtual < array.length; posAtual += 1) {
+    let somaAtual = somaRepeat(array, posAtual);
+    if (somaAtual > somaMaisF){
+      posMaisF = posAtual;
+      somaMaisF = somaAtual;
+    }
+  }
+  return `Posição: ${posMaisF} Soma: ${somaMaisF}`
+}
+
+/* 7) Caça ao rato */
+
 
 /* -----------------
 | Área de execução |
@@ -76,3 +103,9 @@ b = 2;
 console.log(footballPoints(a, b));
 
 /* 6) Repetição do maior número */
+a = [];
+for (let i = 0; i <= 20; i += 1) {
+  let number = Math.ceil(Math.random() * 10);
+  a.push(number);
+}
+console.log(heighestCount(a));
