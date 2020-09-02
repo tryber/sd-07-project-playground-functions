@@ -50,8 +50,8 @@ function footballPoints(wins, ties) {
 function somaRepeat(array, pos) {
   let soma = 0;
   for (let i in array) {
-    if (array[pos] === array[i])  {
-        soma += 1;
+    if (array[pos] === array[i]) {
+      soma += 1;
     }
   }
   return soma;
@@ -63,13 +63,13 @@ function heighestCount(array) {
   let posAtual = posMaisF + 1;
   let somaAtual = 0;
   for (posAtual; posAtual < array.length; posAtual += 1) {
-    let somaAtual = somaRepeat(array, posAtual);
-    if (somaAtual > somaMaisF){
+    somaAtual = somaRepeat(array, posAtual);
+    if (somaAtual > somaMaisF) {
       posMaisF = posAtual;
       somaMaisF = somaAtual;
     }
   }
-  return `Posição: ${posMaisF} Soma: ${somaMaisF}`
+  return `Posição: ${posMaisF} Soma: ${somaMaisF}`;
 }
 
 /* 7) Caça ao rato */
