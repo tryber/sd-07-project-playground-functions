@@ -5,30 +5,32 @@ function compareTrue(valor1, valor2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  return (base*height)/2;
+  return base*height/2;
 }
 
 // Desafio 3
 function splitSentence(string) {
-  return string.split(' ');
+  return string.split(" ");
 }
 
 // Desafio 4
 function concatName(array) {
-  return array[array.length-1] + ', ' + array[0];
+  return array[array.length-1]+", "+array[0];
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return 3 * wins + ties;
+  return 3*wins+ties;
 }
 // Desafio 6
 function highestCount(array) {
-  let aux=array.sort( function( a, b ){ return a-b } ).slice();
-  let repete = 1;
-  for ( i = aux.length - 2; i >= 0; i--) {
-    if ( aux[i] == array[ array.length - 1 ] ){
-      repete = repeta +1;
+  let aux=array.sort(function(a, b){return a-b}).slice();
+  let repete=1;
+  for (i=aux.length-2;i>=0;i--)
+  {
+    if (aux[i]==array[array.length-1])
+    {
+      repete++;
     }
   }
   return repete;
@@ -36,21 +38,25 @@ function highestCount(array) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let d1 = Math.abs( cat1 - mouse );
-  let d2 = Math.abs( cat2 - mouse );
-  if ( d1 === d2 ) {
-    return 'os gatos trombam e o rato foge';
+  d1=Math.abs(cat1-mouse);
+  d2=Math.abs(cat2-mouse);
+  if (d1==d2)
+  {
+    return "os gatos trombam e o rato foge";
   }
-  if (d1<d2) {
-    return 'cat1';
+  if (d1<d2)
+  {
+    return "cat1";
   }
-  if (d2<d1) {
-    return 'cat2';
+  if (d2<d1)
+  {
+    return "cat2";
   }
 }
 
 // Desafio 8
-function fizzBuzz( array ) {
+function fizzBuzz(array)
+{
   let retorno=[];
   for (i in array)
   {
@@ -113,14 +119,15 @@ function decode(string) {
 }
 
 // Desafio 10
-function techList(array, string)
-{  
+function techList(array, string) {
+  
   if (array != null && array.length!=0)
   {
     array=array.sort();
     let retorno=[];
     let aux={};
     
+
     for (i in array)
     {
       retorno[i]={
@@ -160,6 +167,7 @@ function generatePhoneNumber(array) {
       {
         return "não é possível gerar um número de telefone com esses valores";
       }
+      
     }
     return "("+array[0]+array[1]+") "+array[2]+array[3]+array[4]+array[5]+array[6]+"-"+array[7]+array[8]+array[9]+array[10];
   }
@@ -211,6 +219,10 @@ module.exports = {
   splitSentence,
   triangleCheck,
 } 
+
+
+
+
 //console.log(compareTrue(true, true));
 //console.log(calcArea(10, 20));
 //console.log(splitSentence("qwe ert tyu cgh asdf asd sdzf"));
