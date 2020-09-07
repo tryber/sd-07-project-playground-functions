@@ -1,42 +1,84 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(bool1, bool2) {
+  if (bool1 === true && bool2 === true) {
+    return true;
+  } else {
+    return false;
+  }
 }
+console.log(compareTrue(true, false));
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return area = ((base * height) / 2);
 }
+console.log(calcArea(2, 3));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+  let separator = ' '
+  let arrayOfStrings = frase.split(separator);
+  return frase = arrayOfStrings
+
 }
+console.log(splitSentence("go trybe"));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayDeStrings) {
+  return stringFinal = arrayDeStrings[arrayDeStrings.length - 1] + ', ' + arrayDeStrings[0]
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  vitoria = 3;
+  empate = 1;
+  return pontuacao = (wins * vitoria) + (ties * empate);
 }
+
+console.log(footballPoints(3, 1));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(arrayOfNumbers) {
+  let largestNumber = Math.max.apply(null, arrayOfNumbers);
+  let count = 0
+  for (j = 0; j < arrayOfNumbers.length; j += 1) {
+    if (arrayOfNumbers[j] == largestNumber) {
+      count++;
+    }
+  } return count
 }
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return 'cat1';
+  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+    return 'cat2'
+  } else {
+    return "os gatos trombam e o rato foge";
+  }
 }
+console.log(catAndMouse(12, 4, 0));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(arrayDeNumeros) {
+  let mensagemFinal = []
+  for (i = 0; i < arrayDeNumeros.length; i += 1) {
+    if (arrayDeNumeros[i] % 3 === 0 && arrayDeNumeros[i] % 5 == 0) {
+      mensagem = 'fizzBuzz';
+    } else if (arrayDeNumeros[i] % 5 == 0) {
+      mensagem = 'buzz';
+    } else if (arrayDeNumeros[i] % 3 == 0) {
+      mensagem = 'fizz';
+    } else {
+      mensagem = 'bug!'
+    } mensagemFinal.push(mensagem)
+  } return mensagemFinal
 }
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
