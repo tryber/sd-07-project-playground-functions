@@ -41,8 +41,7 @@ concatName(names)
 
 
 //let repost = name.length - 1;
-//document.write (repost);
-//console.log (repost);
+
 
 
 
