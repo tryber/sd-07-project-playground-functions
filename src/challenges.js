@@ -46,7 +46,7 @@ maiorNumero = i;
 }
  }
 for (let j of numeros){
-if (j ===maiorNumero){
+if (j === maiorNumero){
 contador <= 1;
 }
 }
@@ -59,30 +59,53 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+let novoArray =[];
+for (let numeros in array){
+if (numeros / 5 === 0 && numeros / 3 === 0)
+novoArray.push("fizzbuzz");
+else if (numeros / 5 === 0)
+novoArray.push("buzz");
+else if (numeros / 3 === 0)
+novoArray.push("fizz");
+else 
+novoArray.push("bug!");
+}
+return novoArray;
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+let novaFrase = frase.replace(/a/g, "1");
+novaFrase = frase.replace(/e/g, "2");
+novaFrase = frase.replace(/i/g, "3");
+novaFrase = frase.replace(/o/g, "4");
+novaFrase = frase.replace(/u/g, "5");
+
+return novaFrase;
 }
-function decode() {
-  // seu código aqui
+function decode(frase) {
+  let novaFrase = frase.replace(/1/g, "a");
+novaFrase = frase.replace(/2/g, "e");
+novaFrase = frase.replace(/3/g, "i");
+novaFrase = frase.replace(/4/g, "o");
+novaFrase = frase.replace(/5/g, "u");
+
+return novaFrase;
 }
 
 // Desafio 10
 function techList(learn, name) {
-  if (learn ==0) {
+  if (learn == 0) {
 return "Vazio!";
   }
   let learnTechnology = [];
   for ( let i in learn) {
 let organization = learn.sert();
-let includeTechList = 
-( tech: learn[1],
+let includeTechList = { 
+  tech: learn[i],
   name: nome,
-  ) ;
+}
 learnTechnology.push(includeTechList);
   }  
 return learnTechnology;
