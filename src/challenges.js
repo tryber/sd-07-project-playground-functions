@@ -1,11 +1,19 @@
 // Desafio 1
+compareOne = true;
+compareTwo = true;
 function compareTrue() {
-  // seu código aqui
+if (compareOne && compareTwo)
+return compareTrue
+  console.log (compareTrue )
 }
 
 // Desafio 2
 function calcArea() {
-  // seu código aqui
+  let base = 5;
+  let height = 5;
+  let clc = (base * height)/2;
+return clc;
+console.log(clc)
 }
 
 // Desafio 3
@@ -15,8 +23,13 @@ function splitSentence() {
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  let name = [lucas,victor,sandro,miguel,joão];
+let repost = name.length - 1;
+document.write (repost);
+console.log (repost);
+
 }
+
 
 // Desafio 5
 function footballPoints() {
@@ -24,8 +37,20 @@ function footballPoints() {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros) {
+ let maiorNumero = numeros[0];
+ let contador = 0;
+ for (let i of numeros){
+if (i > maiorNumero){
+maiorNumero = i;
+}
+ }
+for (let j of numeros){
+if (j ===maiorNumero){
+contador <= 1;
+}
+}
+return contador;
 }
 
 // Desafio 7
@@ -47,10 +72,21 @@ function decode() {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
-
+function techList(learn, name) {
+  if (learn ==0) {
+return "Vazio!";
+  }
+  let learnTechnology = [];
+  for ( let i in learn) {
+let organization = learn.sert();
+let includeTechList = 
+( tech: learn[1],
+  name: nome,
+  ) ;
+learnTechnology.push(includeTechList);
+  }  
+return learnTechnology;
+  }
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
