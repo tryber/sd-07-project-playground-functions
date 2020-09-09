@@ -1,12 +1,16 @@
 // Desafio 1
 
-function compareTrue()
-compareOne = true;
-compareTwo = true;
+function compareTrue(){
+  compareOne = true;
+  compareTwo = true;
+  if (ompareOne && compareTwo) {
+  return comapreTrue }
+
+}
 let comparar = compareOne && compareTwo;
 return comparar
   console.log (comparar)
-
+}
 
 // Desafio 2
 function calcArea() {
@@ -23,13 +27,29 @@ function splitSentence() {
 }
 
 // Desafio 4
-function concatName() {
-  let name = [lucas,victor,sandro,miguel,joão];
-let repost = name.length - 1;
-document.write (repost);
-console.log (repost);
+let names = ['lucas','victor','sandro','miguel','joão'];
+function concatName(a) {
+  let newStrings = '';
+  for (let i = 0; i < a.length; i +=1) {
+if (i == a.length -1) {
+newStrings += ' , ' + a[i]
 
 }
+  }
+return newStrings
+}
+
+
+
+
+
+
+
+//let repost = name.length - 1;
+//document.write (repost);
+//console.log (repost);
+
+
 
 
 // Desafio 5
