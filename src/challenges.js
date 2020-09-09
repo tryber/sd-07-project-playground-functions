@@ -1,11 +1,12 @@
 // Desafio 1
+
+function compareTrue()
 compareOne = true;
 compareTwo = true;
-function compareTrue() {
-if (compareOne && compareTwo)
-return compareTrue
-  console.log (compareTrue )
-}
+let comparar = compareOne && compareTwo;
+return comparar
+  console.log (comparar)
+
 
 // Desafio 2
 function calcArea() {
