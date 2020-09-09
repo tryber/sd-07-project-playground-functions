@@ -30,15 +30,16 @@ function splitSentence() {
 let names = ['lucas','victor','sandro','miguel','joão'];
 function concatName(a) {
   let newStrings = '';
+  //newStrings += a[0]
   for (let i = 0; i < a.length; i +=1) {
 if (i == a.length -1) {
-newStrings += ' , ' + a[i]
+newStrings += a[i]
 
 }
   }
-return newStrings
+return newStrings + ' , ' + a[0]
 }
-
+concatName(names)
 
 
 
