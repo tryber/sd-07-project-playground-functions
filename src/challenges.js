@@ -4,7 +4,7 @@ function compareTrue(a, b) {
   // seu código aqui
 let compare = a && b;
 return compare;
-
+}
 
   //let a= false;
 //let b= false;
@@ -13,27 +13,24 @@ return compare;
   //} else {
     //return false;
   //};
-}
+
 
 // Desafio2 - CORRETO
 
 function calcArea(base,height) {
-  let base = 10;
-let height = 5;
-let area = (base*height)/2;
-return area ;
+  
+
+
+return (base*height)/2;
 }
 
-calcArea(base,height)
 
 // Desafio 3 -CORRETO
-
-function splitSentence(a) {
-  // seu código aqui
-  let sentence = "go Trybe";
-return a.split(" ");
+function splitSentence(frase) {
+ let palavras;
+ palavras = frase.split (" ");
+ return palavras;
 }
-splitSentence(sentence)
 
 // Desafio 4 -  CORRETO
 function concatName(a) {
