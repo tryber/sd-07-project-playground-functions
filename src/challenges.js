@@ -3,31 +3,33 @@ function compareTrue(a, b) {
   let compare = a && b;
   return compare;
 }
-console.log(compareTrue(true, true));
+
 // Desafio 2
 function calcArea(base, height) {
   let trianguloArea = ((base * height)/2);
   return trianguloArea;
 }
-console.log(calcArea(8, 4));
+
 // Desafio 3
 function splitSentence(frase) {
   let aPalavras = frase.split(' ');
   return aPalavras;
 }
-console.log(splitSentence('go trybe'));
+
+
+
 // Desafio 4
 function concatName(nomes) {
   let tamanho = nomes[nomes.length -1] + `, ` + nomes[0];
   return tamanho;
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+
 // Desafio 5
 function footballPoints(wins, ties ) {
   pontos = (wins * 3) + ties;
   return pontos;
 }
-console.log(footballPoints(7, 5));
+
 // Desafio 6
 function highestCount(numeros) {
   let repete = 0;
@@ -42,7 +44,37 @@ function highestCount(numeros) {
   }
   return repete;
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
+
+
+// Desafio 7
+function catAndMouse() {
+  // seu código aqui
+}
+
+// Desafio 8
+function fizzBuzz() {
+}
+// Desafio 9
+function encode() {
+}
+// Desafio 10
+function techList() {
+}
+// Desafio 11
+function generatePhoneNumber() {
+  // seu código aqui
+}
+
+// Desafio 12
+function triangleCheck() {
+  // seu código aqui
+}
+
+// Desafio 13
+function hydrate() {
+  // seu código aqui
+}
+
 
 module.exports = {
   calcArea,
