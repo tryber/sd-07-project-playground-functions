@@ -1,18 +1,21 @@
 // Desafio 1
-let a= false;
-let b= false;
+
 function compareTrue(a, b) {
   // seu código aqui
+  let a= false;
+let b= false;
   if (a === true && b === true) {
     return true;
   } else {
     return false;
   };
 }
+
 // Desafio2 - CORRETO
-let base = 10;
-let height = 5;
+
 function calcArea(base,height) {
+  let base = 10;
+let height = 5;
 let area = (base*height)/2;
 return area ;
 }
@@ -20,16 +23,17 @@ return area ;
 calcArea(base,height)
 
 // Desafio 3 -CORRETO
-let sentence = "go Trybe";
+
 function splitSentence(a) {
   // seu código aqui
+  let sentence = "go Trybe";
 return a.split(" ");
 }
 splitSentence(sentence)
 
 // Desafio 4 -  CORRETO
-let names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 function concatName(a) {
+  let names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
   let newStrings = '';
   //newStrings += a[0]
   for (let i = 0; i < a.length; i +=1) {
@@ -43,17 +47,19 @@ return newStrings + ' , ' + a[0]
 concatName(names)
 
 // Desafio 5 - CORRETO
-let victory = 5;
-let draw = 3;
+
 function footballPoints(wins, ties) {
+  let victory = 5;
+let draw = 3;
   wins = wins *3;
   return wins + ties;
 }
 footballPoints(victory, draw)
 
 // Desafio 6
-let highNumberList = [9,1,2,3,9,5,7];
+
 function highestCount(a) {
+  let highNumberList = [9,1,2,3,9,5,7];
 let highNumbers =[0];
 for (let = i = 0; i < a.length; i += 1) {
 if (a[i] > highNumbers[0]){
@@ -61,8 +67,9 @@ highNumbers.shift()
 highNumbers.push(a[i])
 }
 }
-let highNumbersFinal = 0;
+
 for (let j = 0; j < a.length ; j +=1){
+  let highNumbersFinal = 0;
 if (highNumbers[0] === a[j]) {
 highNumbersFinal = highNumbersFinal + 1;
 }
@@ -72,11 +79,12 @@ return highNumbersFinal;
 highestCount(highNumberList)
 
 // Desafio 7
-let mouse = 3;
-let cat1 = -1;
-let cat2 = 4;
+
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let mouse = 3;
+let cat1 = -1;
+let cat2 = 4;
   let distanceCat1 = mouse - cat1;
   let distanceCat2 = mouse - cat2;
 
