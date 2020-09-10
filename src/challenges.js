@@ -2,13 +2,17 @@
 
 function compareTrue(a, b) {
   // seu código aqui
-  let a= false;
-let b= false;
-  if (a === true && b === true) {
-    return true;
-  } else {
-    return false;
-  };
+let compare = a && b;
+return compare;
+
+
+  //let a= false;
+//let b= false;
+  //if (a === true && b === true) {
+   // return true;
+  //} else {
+    //return false;
+  //};
 }
 
 // Desafio2 - CORRETO
